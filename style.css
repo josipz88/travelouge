@@ -99,7 +99,7 @@ a:hover {
 Header Navigation
 
 */
-
+/*
 .navigation-item{
     margin-left: 32px;
 }
@@ -115,7 +115,14 @@ Header Navigation
 body .navigation{
     margin-top: 16px;
 }
+*/
 
+.navigation{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 32px;
+}
 /*
 
 Logo
@@ -123,29 +130,31 @@ Logo
 */
 
 
-.logo{
+/*.logo{
     width: auto;
     height: 64px;
     display: block;
     margin: 0 auto;
-}
+}*/
 
-.footer{
-    text-align: center;
+/*.header{
+
     margin-top: 80px;
     margin-bottom: 80px;
-}
+}*/
 
 .header{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
     margin-top: 80px;
-    margin-bottom: 80px;
 }
 
-.main{
+/*.main{
     margin-top: 80px;
     margin-bottom: 80px;
-}
+}*/
 
 /*
 
@@ -154,22 +163,30 @@ Featured article
 */
 
 .featured-article{
-    width: 1120px;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.wrapper{
+    max-width: 1120px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
 }
 
 .metadata{
+    display: flex;
+    flex-direction: row;
     gap: 8px;
-    margin: 16px 0px;
-}
-
-.metadata-location, .metadata-date, .metadata-comments{
-    display: inline-block;
-}
-
-.featured-article .featured-image{
-    margin-top: 80px;
 }
 
 .featured-image{
@@ -177,4 +194,41 @@ Featured article
     object-fit: cover;
     width: 100%;
     display: block;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.article-list{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.single-article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 240px;
+    gap: 24px;
+}
+
+.article-details{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.article-image{
+    width: 320px;
+    height: 240px;
+    aspect-ratio: 320 / 240;
+    object-fit: cover;
+    width: 100%;
 }
