@@ -1,0 +1,180 @@
+/**
+
+Typography
+
+**/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.h1{
+    font-family: Rubik, sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%;
+}
+
+.h2{
+    font-family: Rubik, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 125%;
+}
+
+.p{
+    font-family: Rubik, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.em{
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.small{
+    font-family: Rubik, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+/** 
+
+Colors
+
+**/
+
+.color-primary{
+    color: #50ad9c;
+}
+
+.color-text{
+    color: #1a1a1a;
+}
+
+.color-text-muted{
+    color: #808080;
+}
+
+.color-gray-light{
+    color: #eee;
+}
+
+
+.background-color-primary{
+    background-color: #50ad9c;
+}
+.background-color-text{
+    background-color: #1a1a1a;
+}
+
+.background-color-text-muted{
+    background-color: #808080;
+}
+
+.background-color-gray-light{
+    background-color: #eee;
+}
+
+/**
+
+Link styles
+
+**/
+
+a.active{
+    color: #50ad9c;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/*
+
+Header Navigation
+
+*/
+
+.navigation-item{
+    margin-left: 32px;
+}
+
+.navigation-item:first-child{
+    margin-left: 0;
+}
+
+.navigation{
+    text-align: center;
+}
+
+body .navigation{
+    margin-top: 16px;
+}
+
+/*
+
+Logo
+
+*/
+
+
+.logo{
+    width: auto;
+    height: 64px;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.header{
+
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.main{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/*
+
+Featured article
+
+*/
+
+.featured-article{
+    width: 1120px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.metadata{
+    gap: 8px;
+    margin: 16px 0px;
+}
+
+.metadata-location, .metadata-date, .metadata-comments{
+    display: inline-block;
+}
+
+.featured-article .featured-image{
+    margin-top: 80px;
+}
+
+.featured-image{
+    aspect-ratio: 1120 / 630;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+}
