@@ -226,9 +226,6 @@ Featured article
 }
 
 .article-image{
-    width: 320px;
-    height: 240px;
     aspect-ratio: 320 / 240;
     object-fit: cover;
-    width: 100%;
 }
