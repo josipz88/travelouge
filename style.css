@@ -40,6 +40,38 @@ Typography
     line-height: 150%;
 }
 
+
+.highlight{
+    font-family: Rubik, sans-serif;
+    line-height: 150%;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.highlight-subtitle{
+    font-family: Rubik, sans-serif;
+    line-height: 200%;
+    font-size: 12px;
+    font-weight: 200;
+}   
+
+.form-text{
+    font-family: Rubik, sans-serif;
+    line-height: 100%;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.button-text{
+    font-family: Rubik, sans-serif;
+    line-height: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
 /** 
 
 Colors
@@ -228,4 +260,50 @@ Featured article
 .article-image{
     aspect-ratio: 320 / 240;
     object-fit: cover;
+}
+
+
+/**
+
+Newsletter styles 
+
+**/
+
+.newsletter{
+    display: flex;
+    flex-direction: row;
+    gap: 128px;
+    justify-content: space-between;
+    padding: 40px 192px 40px 96px;
+    background-color: #f6f6f6;
+}
+
+.newsletter-content{
+    display: flex;
+    flex-direction: column;
+    gap: 14.55px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-entry{
+    width: 352px;
+    height: 48px;
+    background-color: #E6E6E6;
+    padding: 8px 16px;
+}
+
+.button{
+    width: 352px;
+    height: 48px;
+    background-color: #f6f6f6;
+    padding: 8px 16px;
+    border-style: solid;
+    border-color: #50ad9c;
 }
