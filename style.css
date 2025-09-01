@@ -1,5 +1,75 @@
 /**
 
+Animations
+
+**/
+@keyframes shake{
+    0% {
+        transform: scale(1.0);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+.shake{
+    animation-name: shake;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+.shake:hover{
+    animation-play-state: paused;
+}
+
+@keyframes fade-in{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    animation: fade-in 1s linear;
+    animation-fill-mode: both;
+}
+
+
+.fade-in.staggered > * {
+    animation: fade-in 0.2s linear;
+    animation-fill-mode: both;
+}
+
+.fade-in.staggered > *:nth-child(2){
+    animation-delay: 0.3s;
+}
+
+.fade-in.staggered > *:nth-child(3){
+    animation-delay: 0.6s;
+}
+
+.fade-in.staggered > *:nth-child(4){
+    animation-delay: 0.9s;
+}
+
+.fade-in.staggered > *:nth-child(5){
+    animation-delay: 1.2s;
+}
+
+.fade-in.staggered > *:nth-child(n+6){
+    animation-delay: 1.5s;
+}
+
+
+
+/**
+
 Typography
 
 **/
